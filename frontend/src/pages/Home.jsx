@@ -7,9 +7,11 @@ import SeasonalDeals from "../components/SeasonalDeals"
 import DeliveryInfo from "../components/DeliveryInfo"
 import Testimonials from "../components/Testimonials"
 import Newsletter from "../components/Newsletter"
+import Login from "../components/Login"
 const Home = () => {
   return (
     <>
+    <Login/>
       <Hero />
       <FeaturedCategories />
       <Bestsellers />
