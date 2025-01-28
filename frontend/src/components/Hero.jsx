@@ -1,5 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
+<<<<<<< HEAD
+=======
+import { FaCarrot, FaAppleAlt, FaLeaf, FaTruck, FaAward } from "react-icons/fa"
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
 
 const Hero = () => {
   return (
@@ -17,7 +21,11 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
+<<<<<<< HEAD
                 to="/"
+=======
+                to="/shop"
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
                 className="bg-emerald-600 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
                 Shop Now
@@ -31,6 +39,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-6 pt-8">
               <div className="flex items-center gap-2">
+<<<<<<< HEAD
                 <i className="fas fa-truck text-emerald-600 text-2xl"></i>
                 <span className="text-sm text-gray-600">Free Delivery</span>
               </div>
@@ -40,6 +49,17 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <i className="fas fa-award text-emerald-600 text-2xl"></i>
+=======
+                <FaTruck size={24} color="#059669" />
+                <span className="text-sm text-gray-600">Free Delivery</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaLeaf size={24} color="#059669" />
+                <span className="text-sm text-gray-600">100% Organic</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaAward size={24} color="#059669" />
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
                 <span className="text-sm text-gray-600">Best Quality</span>
               </div>
             </div>
@@ -50,6 +70,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-emerald-300 opacity-25 rounded-full transform translate-x-1/4"></div>
             </div>
             <div className="absolute top-4 right-4 bg-white p-4 rounded-2xl shadow-lg animate-bounce">
+<<<<<<< HEAD
               <i className="fas fa-carrot text-3xl text-emerald-500"></i>
             </div>
             <div className="absolute bottom-4 left-4 bg-white p-4 rounded-2xl shadow-lg animate-bounce delay-150">
@@ -57,6 +78,15 @@ const Hero = () => {
             </div>
             <div className="absolute top-1/2 right-0 bg-white p-4 rounded-2xl shadow-lg animate-bounce delay-300">
               <i className="fas fa-leaf text-3xl text-emerald-500"></i>
+=======
+              <FaCarrot size={30} color="#059669" />
+            </div>
+            <div className="absolute bottom-4 left-4 bg-white p-4 rounded-2xl shadow-lg animate-bounce delay-150">
+              <FaAppleAlt size={30} color="#059669" />
+            </div>
+            <div className="absolute top-1/2 right-0 bg-white p-4 rounded-2xl shadow-lg animate-bounce delay-300">
+              <FaLeaf size={30} color="#059669" />
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
             </div>
           </div>
         </div>

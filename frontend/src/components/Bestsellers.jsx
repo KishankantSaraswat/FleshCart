@@ -3,14 +3,22 @@ import { Link } from "react-router-dom"
 
 const products = [
   {
+<<<<<<< HEAD
     name: "Organic Spinach",
     description: "Fresh & Crispy",
     price: 3.99,
     oldPrice: 4.99,
+=======
+    name: "Basmati Rice",
+    description: "Premium Long Grain",
+    price: 199,
+    oldPrice: 249,
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
     icon: "fa-seedling",
     badge: "Best Seller",
   },
   {
+<<<<<<< HEAD
     name: "Red Apples",
     description: "Sweet & Fresh",
     price: 5.99,
@@ -23,16 +31,39 @@ const products = [
     description: "Creamy & Rich",
     price: 4.49,
     oldPrice: 5.99,
+=======
+    name: "Organic Turmeric",
+    description: "Pure & Natural",
+    price: 89,
+    oldPrice: 129,
+    icon: "fa-mortar-pestle",
+    badge: "Organic",
+  },
+  {
+    name: "Paneer Fresh",
+    description: "Farm Fresh Daily",
+    price: 149,
+    oldPrice: 199,
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
     icon: "fa-cheese",
     badge: "Fresh",
   },
   {
+<<<<<<< HEAD
     name: "Whole Grain Bread",
     description: "Freshly Baked",
     price: 3.29,
     oldPrice: 4.29,
     icon: "fa-bread-slice",
     badge: "Fresh Baked",
+=======
+    name: "Atta",
+    description: "Chakki Fresh",
+    price: 249,
+    oldPrice: 299,
+    icon: "fa-wheat",
+    badge: "Premium",
+>>>>>>> 8519ed70ba3ccf12fee61313212a530bab640ddd
   },
 ]
 
