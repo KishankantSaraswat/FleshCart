@@ -68,15 +68,21 @@ const Header = () => {
             </button>
 
             {/* Cart */}
-            <button 
-              className="relative text-gray-600 hover:text-emerald-600 transition-colors duration-300"
-              aria-label="Shopping Cart"
+            <Link 
+              to="/cart" 
+              className="relative group transform hover:scale-110 active:scale-95 transition-all duration-300
+                focus:outline-none  focus:ring-emerald-400 focus:ring-offset-2 rounded-full p-1"
+              aria-label={`Shopping cart with  items`}
             >
-              <CiShoppingCart className="text-2xl" />
-              <span className="absolute -top-2 -right-2 bg-emerald-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                3
-              </span>
-            </button>
+
+              <CiShoppingCart size={26} className="text-gray-700 group-hover:text-emerald-600 transition duration-300" />
+              
+                <span className="absolute -top-2 -right-2 bg-emerald-600 text-white text-xs font-bold rounded-full h-5 w-5 
+                  flex items-center justify-center transition-all duration-300 transform group-hover:scale-110">
+                 
+                </span>
+            
+            </Link>
 
             {/* Mobile menu button */}
             <button

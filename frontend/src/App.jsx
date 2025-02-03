@@ -7,11 +7,14 @@ import Header from "./components/Header";
 import Categories from "./pages/Categories";
 import Login from "./pages/login";
 import Register from "./pages/Register";
-
+import { CartProvider } from "./context/CartContext";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
   return (
     <>
+            <CartProvider>
+
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +25,10 @@ const App = () => {
         <Route path="/Register" element={<Register />} />
 
         <Route path="/Categories" element={<Categories />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
+      </CartProvider>
+
     </>
   );
 };
