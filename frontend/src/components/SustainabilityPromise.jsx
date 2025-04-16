@@ -1,20 +1,21 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { FaBox, FaRecycle, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa"
 
 const promises = [
   {
     title: "Eco-Friendly Packaging",
-    icon: "fa-box",
+    icon: <FaBox className="text-3xl text-emerald-600" />,
     description: "All our packaging is made from recycled materials and is 100% biodegradable or reusable.",
   },
   {
     title: "Zero Food Waste",
-    icon: "fa-recycle",
+    icon: <FaRecycle className="text-3xl text-emerald-600" />,
     description: "We partner with local food banks and composting facilities to ensure nothing goes to waste.",
   },
   {
     title: "Local Sourcing",
-    icon: "fa-map-marker-alt",
+    icon: <FaMapMarkerAlt className="text-3xl text-emerald-600" />,
     description:
       "We source from local farmers and producers to reduce transportation emissions and support local communities.",
   },
@@ -40,15 +41,15 @@ const SustainabilityPromise = () => {
           {promises.map((promise, index) => (
             <div key={index} className="bg-emerald-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
               <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-sm">
-                <i className={`fas ${promise.icon} text-3xl text-emerald-600`}></i>
+                {promise.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">{promise.title}</h3>
               <p className="text-gray-600">{promise.description}</p>
               <div className="mt-6">
-                <span className="inline-flex items-center text-emerald-600 font-medium">
+                <Link to="/about" className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700">
                   Learn More
-                  <i className="fas fa-arrow-right ml-2"></i>
-                </span>
+                  <FaArrowRight className="ml-2" />
+                </Link>
               </div>
             </div>
           ))}
@@ -66,7 +67,7 @@ const SustainabilityPromise = () => {
         <div className="text-center mt-12">
           <Link
             to="/about"
-            className="bg-emerald-600 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="bg-emerald-600 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-700 transition-colors duration-300 shadow-lg hover:shadow-xl inline-flex items-center"
           >
             Read Our Full Impact Report
           </Link>

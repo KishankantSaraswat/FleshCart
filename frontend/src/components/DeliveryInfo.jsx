@@ -92,6 +92,4 @@ const DeliveryInfo = () => {
     </section>
   )
 }
-
 export default DeliveryInfo
-

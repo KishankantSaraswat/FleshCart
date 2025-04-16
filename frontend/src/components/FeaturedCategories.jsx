@@ -3,22 +3,13 @@ import { Link } from "react-router-dom"
 import { MdFastfood, MdLocalGroceryStore, MdRestaurant, MdBakeryDining, MdEmojiFoodBeverage, MdLocalDrink } from 'react-icons/md';
 
 const categories = [
-  { name: "Spices", icon: "fa-mortar-pestle", description: "Fresh Masalas" },
-  { name: "Dals", icon: "fa-bowl", description: "Premium Lentils" },
-  { name: "Atta", icon: "fa-wheat", description: "Fresh Flour" },
-  { name: "Snacks", icon: "fa-cookie", description: "Namkeen & More" },
-  { name: "Sweets", icon: "fa-candy", description: "Mithai Corner" },
-  { name: "Beverages", icon: "fa-glass", description: "Chai & More" },
+  { name: "Spices", icon: MdRestaurant, description: "Fresh Masalas" },
+  { name: "Dals", icon: MdFastfood, description: "Premium Lentils" },
+  { name: "Atta", icon: MdBakeryDining, description: "Fresh Flour" },
+  { name: "Snacks", icon: MdLocalGroceryStore, description: "Namkeen & More" },
+  { name: "Sweets", icon: MdEmojiFoodBeverage, description: "Mithai Corner" },
+  { name: "Beverages", icon: MdLocalDrink, description: "Chai & More" },
 ]
-
-const iconMap = {
-  'spices': MdRestaurant,
-  'dals': MdFastfood,
-  'atta': MdBakeryDining,
-  'snacks': MdLocalGroceryStore,
-  'sweets': MdEmojiFoodBeverage,
-  'beverages': MdLocalDrink,
-};
 
 const FeaturedCategories = () => {
   return (
@@ -39,10 +30,7 @@ const FeaturedCategories = () => {
               <div className="bg-emerald-50 rounded-2xl p-6 transition-all duration-300 hover:bg-emerald-100">
                 <div className="text-center">
                   <div className="bg-white rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-sm group-hover:shadow-md transition-all duration-300">
-                    {React.createElement(iconMap[category.name.toLowerCase()], {
-                      className: "text-3xl text-emerald-600",
-                      'aria-hidden': "true"
-                    })}
+                    <category.icon className="text-3xl text-emerald-600" aria-hidden="true" />
                   </div>
                   <h3 className="font-semibold text-gray-800 mb-2">{category.name}</h3>
                   <p className="text-sm text-gray-600">{category.description}</p>
